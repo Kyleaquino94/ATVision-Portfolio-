@@ -117,7 +117,7 @@
     margin: .9rem 0;
     width: 150px;
     height: 100px;
-    cursor: pointer;
+    /* cursor: pointer; */
     transition: transform .4s ease;
 
 }
@@ -221,8 +221,27 @@
     border: none;
     font: normal 500 16px/130px var(--roboto);
     text-transform: uppercase;
+}
 
+.site-main .project-area .button-group button + button{
+    padding-left: 2rem;
+}
 
+.site-main .project-area .grid .our-project > .title h4{
+    font: normal 700 25px/12px var(--roboto);
+
+}
+
+button:focus,
+button:active
+button:hover.btn:active,
+.btn.active{
+    outline: 0px !important;
+    box-shadow: none !important;
+}
+
+.site-main .project-area .grid .our-project .img a:hover img{
+    filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
 }
 
 
